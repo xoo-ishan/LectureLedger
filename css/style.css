@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f5fa;
+  color: #1b2a49;
+  line-height: 1.6;
+}
+
+header {
+  background: #1b2a49;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  color: #ffd23f;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  padding: 6px 10px;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background: #ffd23f;
+  color: #1b2a49;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 25px;
+}
+
+.hero .big {
+  font-size: 90px;
+  font-weight: bold;
+  color: #ffd23f;
+  background: #1b2a49;
+  border-radius: 50%;
+  width: 190px;
+  height: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.box {
+  background: white;
+  border: 2px solid #c9d3e6;
+  border-radius: 10px;
+  padding: 18px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border: 2px solid #c9d3e6;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+button {
+  background: #ffd23f;
+  color: #1b2a49;
+  border: none;
+  padding: 10px 18px;
+  margin-top: 14px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ffc107;
+}
+
+.row {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.row > div {
+  flex: 1;
+  min-width: 150px;
+}
+
+.result {
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.good {
+  background: #d9f2e3;
+  color: #1c6b3d;
+}
+
+.bad {
+  background: #fbdada;
+  color: #a12c2c;
+}
+
+.error {
+  color: #d64545;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th,
+td {
+  border: 1px solid #c9d3e6;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background: #1b2a49;
+  color: white;
+}
+
+footer {
+  background: #1b2a49;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  margin-top: 30px;
+}
+
+/* Mobile layout */
+@media (max-width: 700px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero .big {
+    width: 140px;
+    height: 140px;
+    font-size: 60px;
+  }
+
+  nav a {
+    margin: 0 8px 0 0;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

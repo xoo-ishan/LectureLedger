@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subject Tracker - The Lecture Ledger</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <a class="logo" href="index.html">The Lecture Ledger</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="tracker.html">Subject Tracker</a>
+      <a href="feedback.html">Feedback</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Subject Tracker</h1>
+    <section class="box">
+      <label for="tRequired">Required attendance %</label>
+      <input type="number" id="tRequired" value="75">
+      <label for="subject">Subject name</label>
+      <input type="text" id="subject" placeholder="e.g. Web Development">
+      <div class="row">
+        <div><label for="tHeld">Classes held</label><input type="number" id="tHeld"></div>
+        <div><label for="tAttended">Classes attended</label><input type="number" id="tAttended"></div>
+      </div>
+      <button onclick="addSubject()">Add subject</button>
+      <button onclick="clearAll()">Clear all</button>
+      <div class="error" id="trackError"></div>
+    </section>
+
+    <section class="box">
+      <h2>Your subjects</h2>
+      <p id="overall"></p>
+      <div style="overflow-x:auto">
+        <table>
+          <thead><tr><th>Subject</th><th>Attended / Held</th><th>Attendance</th><th>Advice</th><th></th></tr></thead>
+          <tbody id="tableBody"><tr><td colspan="5">No subjects added yet.</td></tr></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  <footer>The Lecture Ledger - Web Development Mini-Project, Bennett University</footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

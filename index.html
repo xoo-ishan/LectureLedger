@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - The Lecture Ledger</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <a class="logo" href="index.html">The Lecture Ledger</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="tracker.html">Subject Tracker</a>
+      <a href="feedback.html">Feedback</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="big">75%</div>
+      <div>
+        <h1>Know exactly how many classes you can skip.</h1>
+        <p>Most colleges need 75% attendance to sit in exams. Enter your classes held and attended, and The Lecture Ledger tells you how many more you can miss, or how many you must attend to recover.</p>
+      </div>
+    </section>
+
+    <section class="box">
+      <h2>Quick check</h2>
+      <div class="row">
+        <div><label for="held">Classes held so far</label><input type="number" id="held" placeholder="e.g. 40"></div>
+        <div><label for="attended">Classes you attended</label><input type="number" id="attended" placeholder="e.g. 34"></div>
+        <div><label for="required">Required %</label><input type="number" id="required" value="75"></div>
+      </div>
+      <button onclick="quickCheck()">Check my attendance</button>
+      <div id="quickResult"></div>
+    </section>
+
+    <section class="box">
+      <h2>How it works</h2>
+      <p>Attendance % = (classes attended / classes held) x 100.</p>
+      <p>If you are above the limit, the site finds how many extra classes you can miss. If you are below, it finds how many classes in a row you must attend. Use the <a href="tracker.html">Subject Tracker</a> to check every subject together.</p>
+    </section>
+  </main>
+  <footer>The Lecture Ledger - Web Development Mini-Project, Bennett University</footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
